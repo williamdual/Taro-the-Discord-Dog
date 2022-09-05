@@ -42,7 +42,7 @@ async def on_message(message):
                 holder1 = int(holder1)
                 holder2 = int(holder2)
                 holder3 = 0
-                for x in range(0, holder1+1):
+                for x in range(0, holder1):
                     holder3 += random.randint(1, holder2)
                 await message.channel.send(holder3)
                 holder3 = 0
