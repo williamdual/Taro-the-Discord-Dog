@@ -24,7 +24,8 @@ bad_commands = ["roll over", "sit", "stay",
                 "fetch", "heel", "play dead", "paw", "jump"]
 bad_reactions = ["*pees", "*humps your leg", "woof?",
                  "woof!", "*bites Owen", "*vomits", "*stares at you", "*tilts head", "no"]
-unkind_statements = [" is dog stupid", "'s got 10 fingers and still cant tie their shoes", " smells like a dog",]
+unkind_statements = [" is dog stupid", "'s got 10 fingers and still cant tie their shoes", " smells like a dog", 
+                     " is dog water, drinks out of a doggie bowl", " gave me fleas"]
 
 random.seed(datetime.now().timestamp())
 
