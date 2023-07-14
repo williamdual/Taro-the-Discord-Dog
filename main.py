@@ -1,5 +1,10 @@
 import discord
 import random
+from datetime import datetime
+"""
+TW: vulgar languge. No one said she was a kind dog, just a loveable one.
+
+"""
 # discord stuff here
 intents = discord.Intents.default()
 intents.message_content = True
@@ -19,7 +24,9 @@ bad_commands = ["roll over", "sit", "stay",
                 "fetch", "heel", "play dead", "paw", "jump"]
 bad_reactions = ["*pees", "*humps your leg", "woof?",
                  "woof!", "*bites Owen", "*vomits", "*stares at you", "*tilts head", "no"]
+unkind_statements = [" is dog stupid", "'s got 10 fingers and still cant tie their shoes", " smells like a dog",]
 
+random.seed(datetime.now().timestamp())
 
 @client.event
 async def on_ready():
@@ -50,5 +57,8 @@ async def on_message(message):
                 return
         else:
             return
-
+    #roasting people
+    if "taro please roast " in message.content.lower():
+        roastie = message.content.split("roast ")[1].split(" ")[0]
+        await message.channel.send(f'{roastie}{random.choice(unkind_statements)}')
 client.run(token)
