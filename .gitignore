@@ -1,5 +1,6 @@
-#token //NEVER REMOVE
+#Importent files not for the internet //NEVER REMOVE
 token.txt
+aws-updater.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
